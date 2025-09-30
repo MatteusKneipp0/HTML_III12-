@@ -1,0 +1,81 @@
+/* css externo - para que funcione é necesário fazer o link no HTML */
+ 
+
+h1{
+    background-color: rgba(0, 0, 255, 0.3);
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+}
+
+p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    background-color: #0b2555;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid crimson 2px;
+    margin: 30px;
+}
+
+/* Comportamento de link a ser clicado */
+button:link{
+    color: #6cff00;
+
+}
+
+button:visited{
+    color: #000000;
+    background-color: yellow;
+}
+/* Comportamento de passar sobre */
+button:hover{
+    background-color: chartreuse;
+    color: blue;
+}
+
+/* comportamento de link quando esta ativo */
+
+button:active{
+    background-color: red;
+}
+
+/* trabalhando com o Pseudo-Elemento*/
+
+p::first-line{
+    color: red;
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    color: blue;
+    font-size: xx-large;
+
+
+}
+
+
+h3::before{
+    content: url(/img/icone.png)
+}
+
+h3::after{
+    content: url(/img/chapeleiro_mini.jpg);
+}
+
+/* Este pseudo-elemento é espicifico para lista, pois modifica os "bulets ou marcadores" da lista */
+
+::marker{
+    color: greenyellow;
+}
+
+/* Este pseudo-elemento modifica o que o usuário esta selicionando */
+
+::selection{
+    color: rgb(24, 199, 155);
+    background-color: rgb(243, 194, 0);
+}
