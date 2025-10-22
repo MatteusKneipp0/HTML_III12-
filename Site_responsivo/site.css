@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(37, 181, 224);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+}
+
+header{
+    color: white;
+    display: flex;
+}
+
+li{
+    list-style: none;
+    flex-wrap: wrap;
+    color: white;
+}
+.Lista{
+    width: 1305px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+ul{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+
+.cartao {
+    padding: 1px;
+    flex-wrap: wrap;
+    border: 2px solid rgb(87, 74, 87);
+    width: 300px;
+    border-radius: 2%;
+}
+
+.cartao img {
+    width: 300px;
+    height: 400px;
+  
+
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    
+
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.cartao:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
