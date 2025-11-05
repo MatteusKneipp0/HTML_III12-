@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <script>
+        let nomeUsuario = prompt("Insira seu nome de Usuario")
+
+        let senhaUsuario = prompt("Insira sua senha")
+
+        let confirmarUsuario = confirm(`O nome ${nomeUsuario} esta correto`)
+
+        let confirmarSenha  = confirm(`A senha ${senhaUsuario} esta correta`)
+
+        if (confirmarUsuario ==false || confirmarSenha ==false){
+            nomeUsuario = prompt("Insira seu nome de Usuario")
+            senhaUsuario = prompt("Insira sua senha")
+        }
+        else (confirmarUsuario == true || confirmarSenha == true);{ 
+            nomeDeLogin = prompt("login")
+            senhaCorreta = prompt("senha")
+        }
+
+
+
+
+    </script>
+</body>
+</html>
