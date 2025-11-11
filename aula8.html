@@ -272,27 +272,27 @@ console.log(botaoClique)
 // Podemos criar elementos HTML do zero e adicioná-los à página,
 // ou remover elementos que já existem.
 
-// 1. document.createElement(tag)
+
 // Cria um novo elemento (em memória, que ainda não está na página).
 
 
-// let novoItemLista = document.createElement("li");
+let novoItemLista = document.createElement("li");
 
 
-// 2. elementoPai.appendChild(elementoFilho)
+
 // Insere o novo elemento (filho) dentro de um elemento existente (pai).
 // Primeiro, selecionamos o "pai" (a lista <ul>):
-// let listaPai = document.querySelector("#lista-desafio");
+ let listaPai = document.querySelector("#lista-desafio");
 
-// Agora, "anexamos" o novo <li> dentro do <ul>
-// listaPai.appendChild(novoItemLista);
+ //Agora, "anexamos"  novo <li> dentro  <ul>
+ // listaPai.appendChild(novoItemLista);
 
 
 // 3. elemento.remove()
 // Remove o elemento da página.
 // Vamos remover o primeiro item de exemplo:
-// let itemExemplo = document.querySelector("#lista-desafio li"); // Pega o primeiro <li>
-// itemExemplo.remove();
+ let itemExemplo = document.querySelector("#lista-desafio li"); // Pega o primeiro <li>
+//itemExemplo.remove();
 
 
 //desafios
@@ -300,7 +300,11 @@ console.log(botaoClique)
 // 1. Capture o o input (id "campo-nome").
 // 2. Capture a lista (id "lista-desafio").
 //exemplo:
+
 let botaoDesafio = document.querySelector("#botao-clique");
+
+
+
 
 
 
@@ -309,20 +313,30 @@ let botaoDesafio = document.querySelector("#botao-clique");
 //    Dentro deste novo 'listener', faça o seguinte:
 
 botaoDesafio.addEventListener("click", () => {
-    // a. Pegue o texto (value) do input (campo-nome).
+    // a. Pegue o texto (value) do input (campo-nome). 
+
+    let campoNome = document.querySelector("#campo-nome").value
     
+    let novaTag = document.createElement("li")
+
+    novaTag.textContent = campoNome
+
+    let ul = document.querySelector("#lista-desafio")
+    ul.appendChild(novaTag)
+})
 
     // b. Crie um novo elemento "li" (document.createElement).
     
-
     // c. Defina o .textContent do novo "li" como o texto do input.
+
+        
     
     // d. Adicione (appendChild) o novo "li" à 'listaDesafio'.
+    
 
 
     // e. (Desafio Bônus) Limpe o input depois de adicionar.
 
-});
 
 
 // Desafio 2 (Remoção)
@@ -333,7 +347,13 @@ botaoDesafio.addEventListener("click", () => {
 //    ou capturar o elemento de novo e dar .remove())
 
 
+let paragrafo = document.querySelector(".paragrafo")
 
+    paragrafo.addEventListener("click", () => {
+
+        paragrafo.remove(); 
+
+    }) 
 
 
 </script>
